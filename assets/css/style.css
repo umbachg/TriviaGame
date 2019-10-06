@@ -1,0 +1,110 @@
+body {
+    background: url("../images/shining_bg_1250x800.jpg");
+    height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; 
+    font-size: 15px;
+}
+
+#startScreen {
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.startBox {
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+    margin-top: 10%; 
+}
+
+.answerBox {
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+}
+
+.wrongBox {
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+}
+
+label {
+    color: #ffffff;
+}
+
+#answerScreen {
+    display: none;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 21px; 
+}
+
+#timesUp {
+    display: none;
+    width: 35%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 21px;
+}
+
+.timeRemain {
+    padding: 2%;
+    color: #ffffff;
+    padding: 5% 10px 2% 10px;
+}
+
+.timeRemain #time-remain {
+    font-size: 30px;
+}
+
+body .container {
+    height: 100%;
+    text-align: center;
+    display: none;
+    border-radius: 5px;
+    padding: 5% 10px 2% 10px;
+}
+
+.questions { 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.ques, label {
+    padding: 1%
+}
+
+header {
+    font-size: 60px;
+    color: #15a99a;
+    margin-top: 2% 
+}

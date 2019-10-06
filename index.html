@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>The Shining Trivia</title>
+</head>
+
+<body>
+    <div id="startscreen">
+        <div class="startBox">
+            <h3>The Shining</h3>
+            <h1>Trivia Game</h1>
+            <hr />
+            <p>You have 60 seconds to guess 10 questions.</p>
+            <br />
+            <p>Click To Start</p>
+            <button type="button" id="start-btn" class="btn btn-primary white">Start</button>
+        </div>
+    </div>
+
+    <div id="answerScreen">
+        <div class="answerBox">
+            <h2>Here's your score:</h2>
+            <hr>
+            <p id="correctScreen">Correct Answers: </p>
+            <p id="wrongScreen">Wrong Answers: </p>
+        </div>
+    </div>
+
+    <div id="timesUp">
+        <div class="wrongBox">
+            <h2 class="up">Times Up.</h2>
+            <hr>
+            <p>Here's you're score: </p>
+            <p id="correctTimesUp">Correct Answers: </p>
+            <p id="wrongTimesUp">Wrong Answers: </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>The Shining Trivia</header>
+        <div class="row timeRemain">Time Remaining:
+            <div id="time-remain">60</div>
+        </div>
+
+        <div class="questions">
+            <button class="btn btn-primary" type="submit" id="sub-but">submit</button>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Shinning Trivia</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<body>
+
+    <div id="startscreen">
+        <div class="startBox">
+            <h3>The Shining</h3>
+            <h1>Trivia Game</h1>
+            <hr />
+            <p>You have 60 seconds to guess 10 questions.</p>
+            <br />
+            <p>Click To Start</p>
+            <button type="button" id="start-btn" class="btn btn-primary white">Start</button>
+        </div>
+    </div>
+
+    <div id="answerScreen">
+        <div class="answerBox">
+            <h2>Here's your score:</h2>
+            <hr>
+            <p id="correctScreen">Correct Answers: </p>
+            <p id="wrongScreen">Wrong Answers: </p>
+        </div>
+    </div>
+
+    <div id="timesUp">
+        <div class="wrongBox">
+            <h2 class="up">Times Up.</h2>
+            <hr>
+            <p>Here's you're score: </p>
+            <p id="correctTimesUp">Correct Answers: </p>
+            <p id="wrongTimesUp">Wrong Answers: </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>The Shining Trivia</header>
+        <div class="row timeRemain">Time Remaining:
+            <div id="time-remain">60</div>
+        </div>
+
+        <div class="questions">
+            <button type="button" class="btn btn-primary white" id="sub-but">Submit</button>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="box">
+        <div class="header">
+            <h1>The Shining Trivia Game</h1>
+        </div>
+        <br>
+        <div class="timer">
+            <h3>Time Remaining:</h3>
+        </div>
+        <br>
+        <div class="q1">
+            <form>
+                <p>Who has an imaginary friend named Tony?</p>
+                <br>
+                <input type="radio" name="Tony" value="Jack"> Jack
+                <input type="radio" name="Tony" value="Wendy"> Wendy
+                <input type="radio" name="Tony" value="Jimmy"> Jimmy
+                <input type="radio" name="Tony" value="Danny"> Danny
+            </form>
+        </div>
+        <br>
+        <div>
+            <form class="q2">
+                <p>What is the name of the possessed hotel?</p>
+                <br>
+                <input type="radio" name="Hotel" value="The Winterside Hotel"> The Winterside Hotel
+                <input type="radio" name="Hotel" value="The Overlook Hotel"> The Overlook Hotel
+                <input type="radio" name="Hotel" value="The Possessed Hotel"> The Possessed Hotel
+                <input type="radio" name="Hotel" value="The Overside Hotel"> The Overside Hotel
+            </form>
+        </div>
+        <br>
+        <div>
+            <form class="q3">
+                <p>Apart from Danny, who has "the shining"?</p>
+                <br>
+                <input type="radio" name="shining" value="Jack"> Jack
+                <input type="radio" name="shining" value="Ullman"> Ullman
+                <input type="radio" name="shining" value="Hallorann"> Hallorann
+                <input type="radio" name="shining" value="Danny"> Danny
+            </form>
+        </div>
+        <br>
+        <div>
+            <form class="q4">
+                <p>Whose head does Jack threaten to bash in?</p>
+                <br>
+                <input type="radio" name="" value="Wendy"> Wendy
+                <input type="radio" name="" value="Wendy"> Danny
+                <input type="radio" name="" value="Ullman"> Ullman
+                <input type="radio" name="" value="Lloyd"> Lloyd
+            </form>
+        </div>
+        <br>
+        <div>
+            <form class="q5">
+                <p>Who is the manager of the Overlook Hotel?</p>
+                <br>
+                <input type="radio" name="manager" value="Hallorann"> Dick Hallorann
+                <input type="radio" name="manager" value="Ullman"> Stuart Ullman
+                <input type="radio" name="manager" value="Jack"> Jack Torrance
+                <input type="radio" name="manager" value="Bob"> Bob Pierce
+            </form>
+        </div>
+        <br>
+        <div>
+            <form class="q6">
+                <p>Who rushes to the Overlook when he thinks Danny is in trouble?</p>
+                <br>
+                <input type="radio" name="trouble" value="Hallorann"> Dick Hallorann
+                <input type="radio" name="trouble" value="Ullman"> Stuart Ullman
+                <input type="radio" name="trouble" value="Jack"> Jack Torrance
+                <input type="radio" name="trouble" value="Bob"> Bob Pierce
+            </form>
+        </div>
+         <br>
+        <div>
+            <form class="q7">
+                <p>who said, 'For some people... solitude, isolation, can in itself become a problem.'?</p>
+                <br>
+                <input type="radio" name="isolation" value="Hallorann"> Dick Hallorann
+                <input type="radio" name="isolation" value="Jack"> Jack
+                <input type="radio" name="isolation" value="Wendy"> Wendy
+                <input type="radio" name="isolation" value="Ullman"> Stuart Ullman
+            </form>
+        </div>
+        <br>
+        <div>
+            <form class="q8">
+                <p>What was the phrase Jack typed over and over again on the typewriter?</p>
+                <br>
+                <input type="radio" name="typewriter" value="Many hands make light work" "All work and no play makes Jack a dull boy" "a stitch in time saves nine""strike the iron while it's hot">
+                hot
+            </form>
+        </div>
+        <br>
+        <div>
+            <form class="q9">
+                <p>How old are the murdered daughters of the caretaker who used to work at the hotel?</p>
+                <br>
+                <input type="radio" name="daughters" value="6 & 8"> 6 & 8
+                <input type="radio" name="daughters" value="8 & 8"> 8 & 8
+                <input type="radio" name="daughters" value="8 & 10"> 8 & 10
+                <input type="radio" name="daughters" value="9 & 10"> 9 & 10
+            </form>
+        </div>
+        <br>
+        <div>
+            <form class="q10">
+                <p>How did Jack die in the end of the film?</p>
+                <br>
+                <input type="radio" name="die" value="Kills Himself"> Kills Himself
+                <input type="radio" name="die" value="Freezes to death"> Freezes to death
+                <input type="radio" name="die" value="Wendy kills him"> Wendy kills him
+                <input type="radio" name="die" value="Danny kills him"> Danny kills him
+            </form>
+        </div> 
+    </div> -->
